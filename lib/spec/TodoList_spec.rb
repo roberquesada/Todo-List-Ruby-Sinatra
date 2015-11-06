@@ -1,4 +1,4 @@
-require_relative '../todo_list.rb'
+require_relative '../TodoList_spec.rb'
 
 
 describe TodoList do

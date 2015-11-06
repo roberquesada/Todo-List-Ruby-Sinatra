@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Tasks</title>
+</head>
+<body>
+  <ul>
+    <% @tasks.each_with_index do |task, index| %>
+      <li><%= task %> <a href="/complete/<%= index %>">Complete</a></li> 
+    <% end %>
+
+  </ul>
+</body>
+</html>

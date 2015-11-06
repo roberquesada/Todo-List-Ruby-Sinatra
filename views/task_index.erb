@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Tasks</title>
+</head>
+<body>
+  <a href="/new_task">Add new task</a>
+  <ul>
+    <% @tasks.each do |task| %>
+      <li><a href="/complete/<%= task.id %>" <% if task.complete? %> style="text-decoration: line-through" <% end %>><%= task.content %></a></li>
+    <% end %>
+  </ul>
+</body>
+</html>

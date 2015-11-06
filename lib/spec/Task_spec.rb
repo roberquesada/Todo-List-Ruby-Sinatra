@@ -1,4 +1,4 @@
-require_relative '../task_list.rb'
+require_relative '../Task.rb'
 
 describe Task do
 
